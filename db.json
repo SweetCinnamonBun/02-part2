@@ -27,8 +27,13 @@
     },
     {
       "content": "yeet",
-      "important": true,
+      "important": false,
       "id": 6
+    },
+    {
+      "content": "a new note...",
+      "important": true,
+      "id": 7
     }
   ]
 }
