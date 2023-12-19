@@ -5,8 +5,7 @@
   "homepage": "https://SweetCinnamonBun.github.io/02-part2",
   "type": "module",
   "scripts": {
-    "dev": "concurrently \" npm run vite\" \"npm run server\"",
-    "vite": "vite",
+    "dev": "vite",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "build": "vite build",

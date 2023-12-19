@@ -5,6 +5,31 @@ import "./App.css";
 import Note from "./components/Note";
 import axios from "axios";
 import noteService from "./services/notes";
+import s1 from "./images/s1.png";
+import s2 from "./images/s2.png";
+import s3 from "./images/s3.png";
+import s4 from "./images/s4.png";
+
+const images = [s1, s2, s4, s3];
+
+const Images = ({ images }) => {
+  return (
+    <>
+      <h1 className="images-of-project">Kuvat projektista</h1>
+      <div className="images-container">
+        {images.map((x) => {
+          return (
+            <a href={x}>
+              <figure className="figure-img">
+                <img src={x} />
+              </figure>
+            </a>
+          );
+        })}
+      </div>
+    </>
+  );
+};
 
 const Notification = ({ message }) => {
   if (message === null) {
@@ -35,7 +60,7 @@ const App = (props) => {
   const [notes, setNotes] = useState([]);
   const [newNote, setNewNote] = useState("a new note...");
   const [showAll, setShowAll] = useState(true);
-  const [errorMessage, setErrorMessage] = useState("some error happened...");
+  const [errorMessage, setErrorMessage] = useState("no errors currently");
 
   // useEffect(() => {
   //   console.log("effect");
@@ -126,6 +151,7 @@ const App = (props) => {
         <button type="submit">save</button>
       </form>
       <Footer />
+      <Images images={images} />
     </div>
   );
 };

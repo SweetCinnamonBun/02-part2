@@ -18,3 +18,34 @@ h1 {
   padding: 10px;
   margin-bottom: 10px;
 }
+
+.figure-img {
+  width: 100%;
+}
+
+.figure-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.images-of-project {
+  color: black;
+  text-align: center;
+}
+
+.images-container {
+  width: 70%;
+  margin: auto;
+  margin-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.images-container > * {
+  flex: 1 1 40%;
+  margin-inline: 1rem;
+}
+
+.images-container a figure {
+  border: 1px solid black;
+}
