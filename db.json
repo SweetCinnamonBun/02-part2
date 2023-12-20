@@ -17,8 +17,13 @@
     },
     {
       "content": "This note will cause an error",
-      "important": true,
+      "important": false,
       "id": 4
+    },
+    {
+      "content": "a new note...",
+      "important": false,
+      "id": 5
     }
   ]
 }
